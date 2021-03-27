@@ -8,5 +8,14 @@
         android:id="@+id/mainPage2"
         android:name="org.d3if4025.assesment.ui.MainPage"
         android:label="MainPage"
-        tools:layout="@layout/main_page"/>
+        tools:layout="@layout/main_page">
+        <action
+            android:id="@+id/action_mainPage2_to_aboutPage"
+            app:destination="@id/aboutPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutPage"
+        android:name="org.d3if4025.assesment.ui.AboutPage"
+        android:label="AboutPage"
+        tools:layout="@layout/about_page"/>
 </navigation>

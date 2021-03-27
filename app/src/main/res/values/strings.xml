@@ -7,4 +7,11 @@
     <string name="tumbuhan">Tumbuhan</string>
     <string name="kadar">Kadar PH</string>
     <string name="check">Check</string>
+    <string name="about">about</string>
+    <string name="detailapp">aplikasi ini berguna untuk mengetahui rekomendasi kadar ph untuk tanaman hidroponik tertentu</string>
+    <string name="contact">
+        Autor : Rachmad Sukri \n
+        Nim : 6706194025 \n
+        Kelas : D3-RPLA-43-01
+    </string>
 </resources>
