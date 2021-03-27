@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assesment</string>
+    <string name="opening">Perhatikan kesehatan tanaman hidroponik dengan memperhatikan ph</string>
+    <string name="brokoli">Brokoli</string>
+    <string name="bayam">Bayam</string>
+    <string name="kubis">Kubis</string>
+    <string name="tumbuhan">Tumbuhan</string>
+    <string name="kadar">Kadar PH</string>
+    <string name="check">Check</string>
+</resources>
