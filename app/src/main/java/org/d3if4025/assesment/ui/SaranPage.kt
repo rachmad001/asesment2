@@ -1,5 +1,6 @@
 package org.d3if4025.assesment.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -20,6 +21,15 @@ class SaranPage : Fragment() {
         Log.d("ph", ph.toString())
         if (tanaman != null && ph != null) {
                 recomended(tanaman, ph)
+        }
+        binding.share.setOnClickListener {
+            val message = binding.detailtv.text
+            val shareIntent = Intent(Intent.ACTION_SEND)
+            shareIntent.setType("text/plain").putExtra(Intent.EXTRA_TEXT, message)
+            if (shareIntent.resolveActivity(
+                    requireActivity().packageManager) != null) {
+                startActivity(shareIntent)
+            }
         }
         return binding.root
     }
