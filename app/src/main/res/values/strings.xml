@@ -14,4 +14,17 @@
         Nim : 6706194025 \n
         Kelas : D3-RPLA-43-01
     </string>
+    <string name="brokolidetail">
+        Brokoli (Brassica oleracea L. Kelompok Italica) adalah tanaman sayuran yang termasuk dalam suku kubis-kubisan atau Brassicaceae.
+        manfaat brokoli : mencegah kanker, Meningkatkan kesehatan tulang dll
+    </string>
+    <string name="bayamdetail">
+        Bayam (Amaranthus) adalah tumbuhan yang biasa ditanam untuk dikonsumsi daunnya sebagai sayuran hijau.
+         Tumbuhan ini dikenal sebagai sayuran sumber zat besi yang penting bagi tubuh.
+    </string>
+    <string name="kubisdetail">
+        Kubis merupakan salah satu anggota keluarga tumbuhan Brassica. Selain kubis, ada pula brokoli, kembang kol, dan kale. Kubis memiliki beragam bentuk dan warna seperti merah, ungu, putih, dan hijau
+        kubis juga memiliki beragam kandungan vitamin dan mineral. Hal itu membuatnya tepat dikonsumsi sebagai penjaga kesehatan tubuh.
+    </string>
+    <string name="share">share</string>
 </resources>

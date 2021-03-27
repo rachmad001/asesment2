@@ -12,10 +12,18 @@
         <action
             android:id="@+id/action_mainPage2_to_aboutPage"
             app:destination="@id/aboutPage" />
+        <action
+            android:id="@+id/action_mainPage2_to_saranPage"
+            app:destination="@id/saranPage" />
     </fragment>
     <fragment
         android:id="@+id/aboutPage"
         android:name="org.d3if4025.assesment.ui.AboutPage"
         android:label="AboutPage"
         tools:layout="@layout/about_page"/>
+    <fragment
+        android:id="@+id/saranPage"
+        android:name="org.d3if4025.assesment.ui.SaranPage"
+        android:label="SaranPage"
+        tools:layout="@layout/saranpage"/>
 </navigation>

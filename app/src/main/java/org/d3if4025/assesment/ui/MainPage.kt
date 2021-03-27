@@ -5,7 +5,9 @@ import android.view.*
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.navigation.fragment.findNavController
 import org.d3if4025.assesment.R
 import org.d3if4025.assesment.databinding.MainPageBinding
@@ -26,10 +28,10 @@ class MainPage : Fragment() {
 
     private fun cek(){
         if (binding.jenis.checkedRadioButtonId == -1){
-            Toast.makeText(context,"jenis tumbuhan belum dipilih", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"jenis tumbuhan belum dipilih", Toast.LENGTH_SHORT).show()
         }
         else if (binding.ph.text.toString().isEmpty()){
-            Toast.makeText(context,"kadar ph kosong", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"kadar ph kosong", Toast.LENGTH_SHORT).show()
         }
         else {
             var jenis = when {
@@ -37,7 +39,10 @@ class MainPage : Fragment() {
                 binding.brokoli.isChecked -> "brokoli"
                 else -> "kubis"
             }
-            Toast.makeText(context, jenis, Toast.LENGTH_SHORT).show()
+            val bundle = Bundle()
+            bundle.putString("jenis", jenis)
+            bundle.putFloat("ph", binding.ph.text.toString().toFloat())
+            findNavController().navigate(R.id.action_mainPage2_to_saranPage, bundle)
         }
     }
 
