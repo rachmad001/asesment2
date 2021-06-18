@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_mainPage2_to_saranPage"
             app:destination="@id/saranPage" />
+        <action
+            android:id="@+id/action_mainPage2_to_apiInternet"
+            app:destination="@id/apiInternet" />
     </fragment>
     <fragment
         android:id="@+id/aboutPage"
@@ -26,4 +29,9 @@
         android:name="org.d3if4025.assesment.ui.SaranPage"
         android:label="SaranPage"
         tools:layout="@layout/saranpage"/>
+    <fragment
+        android:id="@+id/apiInternet"
+        android:name="org.d3if4025.assesment.ui.ApiInternet"
+        android:label="ApiInternet"
+        tools:layout="@layout/api"/>
 </navigation>
